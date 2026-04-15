@@ -1,7 +1,7 @@
-const BASE_URL = process.env.REACT_APP_API_URL;
-
 import React, { useState } from "react";
 import axios from "axios";
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 function App() {
   const [form, setForm] = useState({
