@@ -104,9 +104,8 @@ The system uses a rule-based scoring model:
 
 * Single-page application
 * Real-time decision result
-* Clean fintech-style UI
+* Clean UI
 * Inline error handling
-* Loading states
 
 ---
 
@@ -117,6 +116,13 @@ The system uses a rule-based scoring model:
 * Machine learning-based scoring
 * Role-based authentication
 * Audit logs & analytics dashboard
+
+---
+
+## Live Links
+
+* frontend: https://vitto-assessment.vercel.app/
+* backend: https://vitto-assessment.onrender.com
 
 ---
 
