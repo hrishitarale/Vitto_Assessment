@@ -1,3 +1,5 @@
+const BASE_URL = process.env.REACT_APP_API_URL;
+
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -54,14 +56,11 @@ function App() {
       };
 
       // 1. Create application
-      const appRes = await axios.post(
-        "http://localhost:5000/api/application",
-        payload,
-      );
+      const appRes = await axios.post(`${BASE_URL}/api/application`, payload);
 
       // 2. Get decision
       const decisionRes = await axios.get(
-        `http://localhost:5000/api/decision/${appRes.data._id}`,
+        `${BASE_URL}/api/decision/${appRes.data._id}`,
       );
 
       setResult(decisionRes.data);
