@@ -1,5 +1,5 @@
 exports.validateApplication = (req, res, next) => {
-  const {
+  let {
     ownerName,
     pan,
     businessType,
